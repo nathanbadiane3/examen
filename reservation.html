@@ -1,0 +1,232 @@
+  
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  object-fit: cover;
+ }  
+   .menu {
+            display: flex;
+            justify-content: space-between;
+            position: fixed;
+            align-items: center;
+            width: 100%;
+            top: 0;
+            border-bottom: 2px solid black;
+            background-color: #7c2d12;
+            z-index: 1000;
+            overflow: hidden;
+        }
+        .logo img {
+            border-radius: 15px;
+            height: 60px;
+            width: 89px;
+        
+
+        }
+        .nav{
+             display: flex;
+              align-items: center;
+              gap: 10px;
+              flex-wrap: wrap;
+              
+        }
+                .nav a {
+          text-decoration: none;
+           color:white;
+            padding: 10px 16px;
+           font-size: 14px;
+         font-weight: 600;
+          border-radius: 999px;
+           transition: 0.3s ease;
+        }
+         .nav a:hover,
+         .nav a:focus-visible {
+         background: #fbbf24;
+         color:white;
+              outline: none;
+            }
+            .vitre {
+            border: 2px solid black;
+            height: 500px;
+            width: 100%;
+            margin: 30px auto;
+            border-radius: 12px;
+            background-color: white;
+            overflow: hidden;
+        }
+      @media (max-width: 768px) {
+
+  .gros6carre {
+    grid-template-columns: 1fr;
+  }
+
+  .gros4carre {
+    grid-template-columns: 1fr;
+  }
+
+  .texteimage h1 {
+    font-size: 24px;
+    top: 15%;
+    right: 25%;
+    text-align: center;
+  }
+
+  .texteimage p {
+    font-size: 14px;
+    top: 45%;
+  }
+
+  .btn {
+    flex-direction: column;
+    top: 95%;
+  }
+.btn-voir{
+  top: 70px;
+}
+  .nav {
+    justify-content: center;
+  }
+}
+        
+      
+        .vitre img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+            
+        }
+        .texteimage h1{
+            position: absolute;
+            text-align: center;
+            top: 31%;
+            left: 35%;
+            color:#d97706;
+            font-size: 50px;
+            font-family: playfair display ,Georgia, serif;
+          } 
+
+            .texteimage p{
+            position: absolute;
+            font-family:Poppins ,Arial, sans-serif;
+            top: 50%;
+            margin:0px 0px 0px 300px;
+            color:white;
+            font-size: 30px; }
+        .btn{
+ display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 27px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.4s ease;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 70%;
+
+
+}
+.btn-voir{
+    background:#d97706;;
+    color:#2b4774;
+    box-shadow: 0 10px 20px rgba(47, 90, 168, 0.2);
+     left: 51%;
+     padding: 12px 24px;
+}
+.btn-voir:hover,
+.btn-voir:focus-visible{
+     background: #fbbf24;
+transform: translateY(-2px);
+box-shadow: 0 14px 24px rgba(47, 90, 168, 0.26);
+outline: none;
+}
+.btn-con {
+  border-color: #cfe0fa;
+  color: #2b4774;
+  background:#d97706;;
+  left: 35%;
+  width: 190px;
+  padding: 14px 24px;
+}
+ 
+.btn-con:hover,
+.btn-con:focus-visible {
+  background: #fbbf24;
+  outline: none;
+  transform: translateY(-2px);
+}
+.petitrec {
+            width: 15%;
+            height: 20px;
+            border: 2px solid black;
+            margin: 15px auto;
+            border-radius: 12px;
+            text-align: center;
+            background-color: #7c2d12;
+            color: white;
+
+        }
+         .gros1carre {
+            width: 90%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin: 10px auto;
+            background-color: white;
+        }
+
+        .gros6carre {
+            grid-template-columns: repeat(3,1fr);
+            display: grid;
+            gap: 10px;
+        }
+        .gros6carre img {
+            width: 100%;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .gros6carre h4 {
+            text-align: center;
+            color: #d97706 ;
+        }
+          .gros4carre {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 10px;
+            color: white;
+        }
+         .gros4carre h3 {
+            margin-left: 15px;
+        }
+        .gros4carre p{
+            color: black;
+            text-align: center;
+        }
+
+        .groscarre {
+            width: 90%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 12px;
+            margin: 20px auto;
+            background-color: white;
+            color:#d97706 ;
+        }
+        .petitrec1 {
+            width: 20%;
+            height: 20px;
+            border: 2px solid black;
+            border-radius: 12px;
+            text-align: center;
+            background-color: #7c2d12;
+            color: white;
+            margin: 20px auto;
+        }
