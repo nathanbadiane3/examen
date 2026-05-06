@@ -1,149 +1,47 @@
-/* 1. RESET & BASES */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <div class="menu">
+    <input type="checkbox"id="menuToggle" class="menu-checkbox" />
+ 
+    <!-- Le label est le bouton burger visuel -->
+    <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+      <span></span>
+    </label>
 
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  overflow-x: hidden; /* Empêche le scroll horizontal parasite */
-}
-
-/* 2. NAVIGATION (Flexible par défaut) */
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: #7c2d12;
-  border-bottom: 2px solid black;
-  z-index: 1000;
-  padding: 5px 10px;
-}
-
-.logo img {
-  border-radius: 15px;
-  height: 50px;
-  width: auto; /* Garde le ratio */
-}
-
-.nav {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  text-decoration: none;
-  color: white;
-  padding: 8px 12px;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 999px;
-  transition: 0.3s;
-}
-
-.nav a:hover {
-  background: #fbbf24;
-}
-
-/* 3. HERO SECTION (La "Vitre") */
-.vitre {
-  position: relative; /* Important pour les textes en absolute */
-  width: 100%;
-  height: 400px;
-  margin-top: 60px; /* Espace pour le menu fixe */
-  background-color: #eee;
-  overflow: hidden;
-}
-
-.vitre img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-/* TEXTE SUR IMAGE (Responsive) */
-.texteimage h1 {
-  position: absolute;
-  top: 20%;
-  width: 100%;
-  text-align: center;
-  color: #d97706;
-  font-size: 28px;
-  padding: 0 10px;
-}
-
-.texteimage p {
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  text-align: center;
-  color: white;
-  font-size: 16px;
-  padding: 0 20px;
-}
-
-/* BOUTONS */
-.btn {
-  position: absolute;
-  top: 70%;
-  padding: 12px 20px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: 700;
-  background: #d97706;
-  color: white;
-  font-size: 14px;
-}
-
-.btn-con { left: 10%; width: 35%; text-align: center; }
-.btn-voir { right: 10%; width: 35%; text-align: center; }
-
-/* 4. GRILLES (1 colonne sur mobile) */
-.gros6carre, .gros4carre {
-  display: grid;
-  grid-template-columns: 1fr; 
-  gap: 15px;
-  width: 90%;
-  margin: 20px auto;
-}
-
-.gros6carre img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.petitrec, .petitrec1 {
-  width: 60%; /* Plus large sur mobile pour être lisible */
-  margin: 20px auto;
-  background: #7c2d12;
-  color: white;
-  text-align: center;
-  border-radius: 12px;
-  padding: 5px;
-}
-
-/* 5. MEDIA QUERIES (Pour les écrans larges) */
-@media (min-width: 768px) {
-  .nav a { font-size: 14px; padding: 10px 16px; }
-  
-  .vitre { height: 500px; }
-  
-  .texteimage h1 { font-size: 50px; top: 30%; }
-  .texteimage p { font-size: 24px; top: 50%; }
-  
-  .btn { width: 200px; }
-  .btn-con { left: 30%; }
-  .btn-voir { right: 30%; }
-
-  .gros6carre { grid-template-columns: repeat(3, 1fr); }
-  .gros4carre { grid-template-columns: repeat(4, 1fr); }
-  
-  .petitrec, .petitrec1 { width: 20%; }
-}
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Acceuil</a>
+            <a href="about.html">A propos</a>
+            <a href="reservation.html">Réservation</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </div>
+</body>
+</html>
+ <div class="content3">
+        <h1>A propos de Teranga Food</h1>
+        <p>Chez Teranga Food, notre histoire commence avec une passion pour la cuisine sénégalaise et le désir de
+            partager nos traditions culinaires avec le monde. Depuis notre création, nous mettons en valeur des recettes
+            authentiques, transmises de génération en génération, tout en y ajoutant une touche moderne.
+            Nous nous appuyons sur des valeurs fortes :                                                                   
+            Qualité : des ingrédients frais et soigneusement sélectionnés
+            Hygiène : un respect strict des normes de propreté
+            Accueil : un service chaleureux et convivial
+            Tradition : des plats inspirés de la culture sénégalaise
+            Notre équipe est composée de cuisiniers passionnés et de personnel dévoué, toujours prêts à offrir une
+            expérience agréable à chaque client.
+            L’ambiance de notre restaurant est à la fois chaleureuse, familiale et authentique, pour que chacun se sente
+            comme chez lui.
+            Enfin, nous nous engageons à soutenir les produits locaux, en travaillant avec des producteurs de la région
+            afin de garantir fraîcheur et qualité tout en valorisant l’économie locale.</p>
+    </div>

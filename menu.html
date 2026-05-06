@@ -1,307 +1,170 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  object-fit: cover;
-}  
-.menu {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  border-bottom: 1px solid black;
-  background-color: #7c2d12;
-  z-index: 1000;
-  overflow: hidden;
-}
-.logo img {
-  border-radius: 15px;
-  border: 3px solid black;
-  height: 60px;
-  width: 89px;
-  background-color: blue;
-  border: none;
-}
-.nav {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-.nav a {
-  text-decoration: none;
-  color: white;
-  padding: 10px 16px;
-  font-size: 14px;
-  font-weight: 600;
-  border-radius: 999px;
-  transition: 0.3s ease;
-}
-.nav a:hover,
-.nav a:focus-visible {
-  background: #fbbf24;
-  color: white;
-  outline: none;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="menu">
+    <input type="checkbox"id="menuToggle" class="menu-checkbox" />
+ 
+    <!-- Le label est le bouton burger visuel -->
+    <label for="menuToggle" class="menu-toggle" aria-label="Ouvrir le menu">
+      <span></span>
+    </label>
+
+        <div class="logo">
+            <img src="logo.png" alt="">
+        </div>
+        <nav class="nav">
+            <a href="index.html">Acceuil</a>
+            <a href="about.html">A propos</a>
+            <a href="reservation.html">Réservation</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="menu.html">Menu</a>
+        </nav>
+    </div>
+   <div class="m"> <h3>Les Plats</h3></div>
+    <div class="content1">
+    <div class="card">
+
+    <img src="thiebou.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>THIEBOUDIEUNE</p>
+         <h4>prix  :   4500</h4>
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="yassa.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>YASSA POULET</p>
+         <h4>prix  :   4500</h4>
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="mafe.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>MAFE</p>
+         <h4>prix  :   4500</h4>
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="soupou.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>SOUPOU KANDIA</p>
+         <h4>prix  :   4500</h4>
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="brochette.jpg" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>BROCHETTE</p>
+<h4>prix  :   4500</h4>
+        <button>Commander</button>
+    </div></div> 
+    <div class="card">
+    <img src="cestbon.jpg" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>POISSON BRAISER</p>
+        <h4>prix  :   4500</h4>
+
+        <button>Commander</button>
+    </div></div></div>
+
+    <div class="m1"> <h3>Les Jus</h3></div>
 
 
-/* --- SECTION DESKTOP --- */
-.vitre img {
-  width: 100%; /* Corrigé : 100% au lieu de 1263px pour éviter le scroll horizontal */
-  height: 500px;
-  object-fit: cover;
-}
-.texteimage h1 {
-  position: absolute;
-  text-align: center;
-  top: 31%;
-  left: 0; 
-  right: 0; /* Centrage horizontal propre */
-  color: #d97706;
-  font-size: 50px;
-  font-family: playfair display, Georgia, serif;
-} 
-.texteimage p {
-  position: absolute;
-  font-family: Poppins, Arial, sans-serif;
-  top: 50%;
-  left: 0;
-  right: 0;
-  text-align: center; /* Remplacé margin-left: 300px par un vrai centrage */
-  color: white;
-  font-size: 30px; 
-}
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-height: 27px;
-  padding: 14px 24px;
-  border-radius: 14px;
-  text-decoration: none;
-  font-weight: 700;
-  transition: 0.4s ease;
-  border: 1px solid transparent;
-  position: absolute;
-  top: 70%;
-}
-.btn-voir {
-  background: #d97706;
-  color: #2b4774;
-  box-shadow: 0 10px 20px rgba(47, 90, 168, 0.2);
-  left: 51%;
-}
-.btn-voir:hover,
-.btn-voir:focus-visible {
-  background: #fbbf24;
-  transform: translateY(-2px);
-  box-shadow: 0 14px 24px rgba(47, 90, 168, 0.26);
-  outline: none;
-}
-.btn-con {
-  border-color: #cfe0fa;
-  color: #2b4774;
-  background: #d97706;
-  left: 35%;
-  width: 190px;
-}
-.btn-con:hover,
-.btn-con:focus-visible {
-  background: #fbbf24;
-  outline: none;
-  transform: translateY(-2px);
-}
-.petitrec {
-  width: 15%;
-  height: 20px;
-  margin: 15px auto;
-  border-radius: 12px;
-  text-align: center;
-  background-color: #7c2d12;
-  color: white;
-}
-.gros1carre {
-  width: 90%;
-  height: auto;
-  border-radius: 12px;
-  margin: 10px auto;
-  background-color: white;
-   transition: 0.4s ease;
-  }
-  .gros1carre:hover,
-.gros1carre:focus-visible {
-  outline: none;
-  transform: translateY(-5px);
-}
-.gros6carre {
-  grid-template-columns: repeat(3, 1fr);
-  display: grid;
-  
-}
-.gros6carre img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  border-radius: 10px;
-  object-fit: cover;
-  
-}
-.gros6carre h4 {
-  text-align: center;
-  color: #d97706;
-  font-family:  playfair display, Georgia, serif;
-  
-}
-.gros4carre {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  margin: auto;
-  color: white;
-}
-.gros4carre h3 {
-  margin-left: 15px;
-}
-.gros4carre p {
-  color: black;
-  text-align: center;
-}
-.groscarre {
-  width: 90%;
-  height: auto;
-  border-radius: 12px;
-  margin: 20px auto;
-  background-color: white;
-  color: #d97706;
-   transition: 0.4s ease;
-}
-.groscarre:hover,
-.groscarre:focus-visible {
-  outline: none;
-  transform: translateY(-5px);
-}
-.petitrec1 {
-  width: 20%;
-  height: 20px;
-  border-radius: 12px;
-  text-align: center;
-  background-color: #7c2d12;
-  color: white;
-  margin: 20px auto;
-}
-.groscarre img{
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  border-radius: 10px;
-  object-fit: cover;
-}
-.groscarre h3{
-  text-align: center;
-  font-family: playfair display, Georgia, serif;
-}
-.enbas h1{
-padding: 20px;
-}
-.localisation{
-  display: flex;
-  padding: 5px;
-  margin: 15px auto;
-}
-.grosrectangle {
-            
-            height: auto;
-            width: 48%;
-            border-radius: 12px;
-            background-color: white;
-            padding: 10px;
-            flex-wrap: wrap;
+<div class="content2">
+    <div class="card">
+    <img src="bissap.png" alt="Food">
 
-        }
-        .grosrectangle h2{
-          margin-bottom: 10px;
-          font-size: 35px;
-          color: #7c2d12;;
-        }
-       .grosrectangle p{
-        margin-top: 20px;
-        margin-bottom: 20px;
-       } 
-        .grosrectangle h5{
-          color:#d97706;
-          font-size: 20px;
-        }
-        .grosrectangle iframe{
-          border-radius: 15px;
-          align-content: center;
-          height: 325px;
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>BISSAP</p>
+        <h4>prix  :   1000</h4>
 
-        }
-         .grosrectangle2 {
-            border-top: 1px solid black;
-            height: auto;
-            width: 100%;
-            margin-top: 15px;
-            background-color: white;
-            text-align: center;
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="bouye.png" alt="Food">
 
-        }
-        .grosrectangle2 p {
-            text-align: center;
-            color: #7c2d12;
-            font-size: 20px;
-            font-weight: 700;
-        }
-        
-         .grosrectangle2 h4 {
-            display: inline flex;
-            padding: 0px 40px 0px 0px;
-            margin-top: 10px;
-          
-        }
-         .grosrectangle2 a {
-            text-decoration: none;
-            color: #d97706;
-          
-        }
-         .grosrectangle2 h5 {
-           margin-top: 15px;
-          
-        }
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>BISSAP</p>
+        <h4>prix  :   1000</h4>
 
-/* --- MEDIA QUERY (Toujours en dernier) --- */
-@media(max-width: 414px) {
-  .gros6carre, .gros4carre {
-    grid-template-columns: repeat(1, 1fr);
-    text-align: center;
-  }
-  .vitre img {
-    max-width: 100%;
-     /* Empêche de dépasser de l'écran mobile */
-  }
-  .texteimage h1 {
-    font-size: 20px; /* Corrigé : 0px masquait le titre */
-    top: 20%;
-  } 
-  .texteimage p {
-    font-size: 12px;
-    margin: 0; /* Supprimé le margin de 300px qui cassait tout */
-    top: 45%;
-  }
-  .btn-con {
-    left: 10%;
-    width: 140px;
-    top: 60%;
-  }
-  .btn-voir {
-    left: 55%;
-    width: 140px;
-    top: 60%;
-  }
-  .petitrec, .petitrec1 {
-    width: 50%; /* Largeur adaptée au mobile */
-  }
-}
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="ditakh.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>BISSAP</p>
+        <h4>prix  :   1000</h4>
+
+        <button>Commander</button>
+    </div></div>
+    <div class="card">
+    <img src="goyave.png" alt="Food">
+
+    <div class="card-content">
+        <h2>Teranga Food</h2>
+        <p>BISSAP</p>
+        <h4>prix  :   1000</h4>
+
+        <button>Commander</button>
+    </div></div>
+</div>
+<div class="localisation">
+        <div class="grosrectangle">
+            <h2>Teranga Food</h2>
+            <h5><i class="fa-solid fa-location-dot"></i>ADRESSE</h5>
+            <p>Quartier Ngor <br> Dakar, sénégal</p>
+            <h5><i class="fa-regular fa-clock"></i>HORAIRES</h5>
+            <p>Lun-Dim <br>07h00 - 03h00</p>
+            <h5><i class="fa-solid fa-phone"></i>CONTACT</h5>
+            <p>33 820 80 82 <br>77 574 69 87</p>
+
+        </div>
+        <div class="grosrectangle"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30867.77002466047!2d-17.534116831674332!3d14.742459791953513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec112dd6f2bfcb5%3A0xe5df9d85ac34dfd2!2sNgor%2C%20Dakar!5e0!3m2!1sfr!2ssn!4v1777652197781!5m2!1sfr!2ssn"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+    </div>
+    <div class="grosrectangle2">
+        <P>Nos Réseaux</P>
+        <a href="">
+            <h4><i class="fa-brands fa-x-twitter"></i>Teranga_221</h4>
+        </a>
+        <a href="">
+            <h4><i class="fa-brands fa-tiktok"></i>teran_ga221</h4>
+        </a>
+        <a href="">
+            <h4><i class="fa-brands fa-square-instagram"></i>te_ranga221</h4>
+        </a>
+        <a href="">
+            <h4><i class="fa-brands fa-facebook"></i>Teranga221</h4>
+        </a>
+        <a href="">
+            <h4><i class="fa-brands fa-snapchat"></i>Teranga_sn</h4>
+        </a>
+        <h5>2026 Teranga Food, le gout authentique du sénégal <br>dévéloppé par tom sawyer</h5>
+    </div>
+
+</body>
+</html>
