@@ -828,6 +828,7 @@ button:hover{
     width: 130px;
     height: 39px;
     top: 60%;
+    text-align: center;
   }
 
   .btn-voir {
