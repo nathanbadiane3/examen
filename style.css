@@ -218,6 +218,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
   gap: 10px;
+  padding: inline-flex;
 }
 .gros6carre a{
   text-decoration:none ;
@@ -664,12 +665,10 @@ button:hover{
   flex-wrap: wrap;
 }
         .content4 {
-            border: 2px solid black;
             height: auto;
             width: 95%;
             margin: 30px auto;
             border-radius: 12px;
-            background-color: white;
             padding: 10px;
             display: flex;
             gap: 20px;
