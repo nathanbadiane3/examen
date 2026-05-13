@@ -109,19 +109,19 @@ body {
 
                                 /*le corps de la page dacceuil*/
 
-.vitre {
+.tete {
   position: relative;
 margin-top: 60px;
 }
 
-.vitre img {
+.tete img {
   width: 100%;
   height: 500px;
   object-fit: cover;
   display: block;
 }
 
-.texteimage h1 {
+.textei h1 {
   position: absolute;
   text-align: center;
   top: 31%;
@@ -133,7 +133,7 @@ margin-top: 60px;
   padding: 0 10px;
 }
 
-.texteimage p {
+.textei p {
   position: absolute;
   font-family: Poppins, Arial, sans-serif;
   top: 50%;
@@ -200,7 +200,7 @@ margin-top: 60px;
   color: white;
 }
 
-.gros1carre {
+.e {
   width: 90%;
   height: auto;
   border-radius: 12px;
@@ -209,23 +209,23 @@ margin-top: 60px;
   transition: 0.4s ease;
 }
 
-.gros1carre:hover,
-.gros1carre:focus-visible {
+.e:hover,
+.e:focus-visible {
   outline: none;
   transform: translateY(-5px);
 }
 
-.gros6carre {
+.k{
   grid-template-columns: repeat(3, 1fr);
   display: grid;
   gap: 10px;
   padding: inline-flex;
 }
-.gros6carre a{
+.k a{
   text-decoration:none ;
 }
 
-.gros6carre img {
+.k img {
   width: 100%;
   height: auto;
   max-height: 150px;
@@ -233,13 +233,13 @@ margin-top: 60px;
   object-fit: cover;
 }
 
-.gros6carre h4 {
+.k h4 {
   text-align: center;
   color: #d97706;
   font-family: playfair display, Georgia, serif;
 }
 
-.gros4carre {
+.n {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
@@ -247,16 +247,16 @@ margin-top: 60px;
   color: white;
 }
 
-.gros4carre h3 {
+.n h3 {
   margin-left: 15px;
 }
 
-.gros4carre p {
+.n p {
   color: black;
   text-align: center;
 }
 
-.groscarre {
+.y {
   width: 90%;
   height: auto;
   border-radius: 12px;
@@ -266,8 +266,8 @@ margin-top: 60px;
   transition: 0.4s ease;
 }
 
-.groscarre:hover,
-.groscarre:focus-visible {
+.y:hover,
+.y:focus-visible {
   outline: none;
   transform: translateY(-5px);
 }
@@ -282,7 +282,7 @@ margin-top: 60px;
   margin: 20px auto;
 }
 
-.groscarre img {
+.y img {
   width: 100%;
   height: auto;
   max-height: 150px;
@@ -290,7 +290,7 @@ margin-top: 60px;
   object-fit: cover;
 }
 
-.groscarre h3 {
+.y h3 {
   text-align: center;
   font-family: playfair display, Georgia, serif;
 }
@@ -299,14 +299,14 @@ margin-top: 60px;
   padding: 20px;
 }
 
-.localisation {
+.position {
   display: flex;
   padding: 5px;
   margin: 15px auto;
   gap: 10px;
 }
 
-.grosrectangle {
+.bas {
   height: auto;
   width: 48%;
   border-radius: 12px;
@@ -314,23 +314,23 @@ margin-top: 60px;
   padding: 10px;
 }
 
-.grosrectangle h2 {
+.bas h2 {
   margin-bottom: 10px;
   font-size: 35px;
   color: #7c2d12;
 }
 
-.grosrectangle p {
+.bas p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.grosrectangle h5 {
+.bas h5 {
   color: #d97706;
   font-size: 20px;
 }
 
-.grosrectangle iframe {
+.bas iframe {
   border-radius: 15px;
   width: 100%;
   height: 325px;
@@ -461,7 +461,7 @@ margin-top: 60px;
             color: white;
         }
                                           /*partie menue */ 
-        .m{
+        .t{
            width: 15%;
            min-height: 20px;
           border-radius: 12px;
@@ -483,13 +483,13 @@ margin-top: 60px;
         
           
         }
-        .m h3{
+        .t h3{
           color: white;
           text-align: center;
           margin-top: 100px;
           
         }
-        .content1{
+        .H{
           grid-template-columns: repeat(3,1fr);
           display: flex;
           flex-wrap: wrap;
@@ -499,7 +499,7 @@ margin-top: 60px;
           padding: auto;
         }
         
-        .content2{
+        .F{
            grid-template-columns: repeat(2,1fr);
           display: flex;
           flex-wrap: wrap;
@@ -509,7 +509,7 @@ margin-top: 60px;
         }
 
         
-        .card{
+        .j{
     width: 400px;
     background: white;
     border-radius: 15px;
@@ -520,31 +520,31 @@ margin-top: 60px;
 
 }
 
-.card:hover{
+.j:hover{
     transform: scale(1.03);
 }
 
-.card img{
+.j img{
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-.card-content{
+.o{
     padding: 20px;
 }
 
-.card-content h2{
+.o h2{
     margin-bottom: 10px;
     color: #7c2d12;
 }
-.card-content h4{
+.o h4{
     margin-bottom: 10px;
     color:#d97706;
 }
 
 
-.card-content p{
+.o p{
     color: gray;
 }
 
@@ -582,31 +582,33 @@ button:hover{
   color: #7c2d12;
 }
 
-.grille{
+.bloc{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.intgrille{
+.intbloc{
   background-color: white;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
   transition: 0.3s;
+   grid-template-columns: repeat(3,1fr);
+
 }
 
-.intgrille:hover{
+.intbloc:hover{
   transform: scale(1.03);
 }
 
-.intgrille img{
+.intbloc img{
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
 
-.intgrille p{
+.intbloc p{
   text-align: center;
   padding: 15px;
   font-size: 18px;
@@ -614,53 +616,53 @@ button:hover{
   color: #333;
 }
 
-.content3{
+.conten3{
   padding: 20px;
 }
                                           /*partie about*/ 
 
-.apropos {
+.PROPOS{
   padding: 60px 20px;
   max-width: 900px;
   margin: auto;
   text-align: center;
 }
 
-.apropos h1 {
+.PROPOS h1 {
   font-size: 36px;
   color: #7c2d12;
   margin-bottom: 10px;
 }
 
-.slogan {
+.SLOGAN {
   font-size: 18px;
   color: #555;
   margin-bottom: 30px;
   font-style: italic;
 }
 
-.apropos p {
+.PROPOS p {
   font-size: 17px;
   line-height: 1.7;
   margin-bottom: 20px;
 }
 
-.valeurs {
+.va {
   margin-top: 40px;
   text-align: left;
 }
 
-.valeurs h2 {
+.va h2 {
   color: #7c2d12;
   margin-bottom: 15px;
 }
 
-.valeurs ul {
+.va ul {
   list-style: none;
   padding: 0;
 }
 
-.valeurs li {
+.va li {
   background: #fff;
   margin-bottom: 10px;
   padding: 12px;
@@ -668,12 +670,12 @@ button:hover{
   border-radius: 5px;
 }
 
-.footer-text {
+.foot {
   margin-top: 40px;
   font-weight: bold;
   color: #7c2d12;
 }
-.equip{
+.X{
       width: 290px;
     background: white;
     border-radius: 15px;
@@ -697,19 +699,19 @@ button:hover{
   text-align: center;
   margin-top: 10px;
 }
-.equipcontent{
+.conten{
     padding: 20px;
     margin: 0 auto;
 }
-.equipcontent h3{
+.conten h3{
   text-align: center;
 }
-.equip img{
+.X img{
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
-.valeurs1{
+.val{
   padding: 12px;
   display: flex;
   justify-content: space-between;
@@ -836,7 +838,11 @@ button:hover{
     grid-template-columns: repeat(2, 1fr);
   
 
-}}
+}
+.intgrille{
+  grid-template-columns: repeat(2,1fr);
+}
+}
 
 /* --- MOBILE --- */
 
@@ -917,6 +923,9 @@ button:hover{
 
   .galerie{
     padding: 20px;
+  }
+  .intgrille{
+    grid-template-columns: 1fr;
   }
   
 }
