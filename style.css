@@ -24,9 +24,10 @@ body {
 
 .logo img{
   border-radius: 15px;
-  height: 60px;
-  width: 89px;
+  height: 50px;
+  width: 80px;
   border: none;
+  margin-top: 5px;
 }
 .menu-checkbox {
   display: none;
@@ -110,7 +111,7 @@ body {
 
 .vitre {
   position: relative;
-
+margin-top: 60px;
 }
 
 .vitre img {
